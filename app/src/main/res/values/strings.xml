@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NewsApplication</string>
+    <string name="article_Image">Article Image</string>
+    <string name="open_on_web">Open on Web</string>
+</resources>
