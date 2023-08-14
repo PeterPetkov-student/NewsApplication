@@ -1,5 +1,6 @@
 package com.example.newsapplication.ui.views
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,16 +22,19 @@ class NewsTopicsFragment : Fragment() {
     private lateinit var readCountTextView: TextView
     private lateinit var topicsRecyclerView: RecyclerView
 
-    private val topics = listOf("Technology", "Health")  // Add more sources as per your requirement
+    private val topics = listOf("Technology", "Health","Business","Politics")  // Add more sources as per your requirement
     private val topicToSourceMap = mapOf(
         "Technology" to "technology",
-        "Health" to "health"
+        "Health" to "health",
+        "Business" to "business",
+        "Politics" to "politics"
     )
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_news_topic, container, false)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
